@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3e2e6;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+.header h2 {
+  font-size: 40px;
+  color: #6b4f5c ;
+  font-weight: bold;
+  text-shadow: 1px 1px #6b4f5c;
+  border-radius: 5px;
+  padding: 5px 10px; 
+}
+.header h2:hover {
+  transform: scale(1.1);
+}
+span {
+  color: #e8dfe0;
+}
+.header img {
+  width: 100px;
+}
+.main {
+  width: 100%;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+.product {
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  background-color: #efe0e7;
+  height: 150px;
+  width: 70%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-top: 2%;
+}
+.product:hover {
+  background-color: #e8c5d6;
+}
+.product img {
+  width: 180px;
+  height: 90%;
+  margin-left: 2%;
+}
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  width: 25%;
+  justify-content: center;
+}
+.price h5 {
+  margin-top: 4%;
+  font-size: 20px;
+}
+.price h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.product h4 {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.product .delete {
+  margin-left: 10%;
+  margin-right: 3%;
+  width: 100px;
+  height: 50px;
+  font-size: large;
+  background-color: rgb(230, 1, 1);
+  color: azure;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#minus1,
+#plus1 {
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  background-color: #ee6ca9;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#minus1:hover,
+#plus1:hover {
+  background-color: #ec358a;
+}
+
+.product .delete:hover {
+  transform: scale(1.05);
+  background-color: rgb(190, 0, 0);
+}
+
+#total {
+  position: relative;
+  background-color: #efe0e7;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: 73.5%;
+  width: 170px;
+  height: 60px;
+  text-align: center;
+  font-size: large;
+  padding-top: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#total:hover {
+  transform: scale(1.1);
+}
+
+#price {
+  display: none;
+}
+
+#heart {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+#heart:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 1366px) {
+  .header h2 {
+    font-size: 40px;
+  }
+  .product {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header h2 {
+    font-size: 30px;
+  }
+  .product {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
